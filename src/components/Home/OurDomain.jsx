@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../CSS/Home/OurDomain.css'
+import { motion } from 'framer-motion'
 
 export default function OurDomain() {
   return (
@@ -10,7 +11,14 @@ export default function OurDomain() {
         We are well suited to transform a complex business problem into a simple solution.</h2>
       <div className='flex flex-wrap justify-evenly justify-center items-center gap-5  '>
 
-        <div className='relative1'>
+       <motion.div className='relative1'
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -20,9 +28,16 @@ export default function OurDomain() {
             <h5 className="cardHead2">CMS Software</h5>
             <p className="cardContent2">The content management system (CMS) manages the creation and management of digital content.</p>
           </a>
-        </div>
+        </motion.div>
 
-        <div className='relative1'>
+       <motion.div className='relative1'
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -33,8 +48,15 @@ export default function OurDomain() {
             <p className="cardContent2">Customer Support Software is customizable and scales to meet the needs of any business.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -44,8 +66,15 @@ export default function OurDomain() {
             <p className="cardContent2">An ERP-based software solution used for automating back-office processes and everyday business tasks.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -55,8 +84,15 @@ export default function OurDomain() {
             <p className="cardContent2">A specialist eCommerce software platform helps merchants set up an online business.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -67,8 +103,15 @@ export default function OurDomain() {
             <p className="cardContent2">The free invoice software for businesses with GST and all possible invoice features.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -79,8 +122,15 @@ export default function OurDomain() {
             <p className="cardContent2">The software stores patient information in an electronic format in hospitals and clinics.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -92,8 +142,15 @@ export default function OurDomain() {
               email, staff information and attendance and more.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -104,8 +161,15 @@ export default function OurDomain() {
             <p className="cardContent2">Facilitate the management of business processes dealing with money through software programs.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -117,8 +181,15 @@ export default function OurDomain() {
               report and administer training programs.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -129,8 +200,15 @@ export default function OurDomain() {
             <p className="cardContent2">Software used is typically equipped with booking management and payment processing.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -141,8 +219,15 @@ export default function OurDomain() {
             <p className="cardContent2">POS software monitors and records all transactions between a seller and a buyer.</p>
           </a>
 
-        </div>
-        <div className='relative1'>
+        </motion.div>
+       <motion.div className='relative1'
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
           <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
@@ -154,7 +239,7 @@ export default function OurDomain() {
               multiple branches and locations all on a single platform</p>
           </a>
 
-        </div>
+        </motion.div>
 
       </div>
 

@@ -6,6 +6,7 @@ import OurService from "@/components/Home/OurService";
 import OurDomain from "@/components/Home/OurDomain";
 import Testimonials from "@/components/Home/Testimonials";
 import { useEffect } from "react";
+import Platform from "@/components/Home/Platform";
 
 export default function home(){
     useEffect(()=>{
@@ -23,6 +24,7 @@ export default function home(){
         <OurService/>
         <OurDomain/>
         <Testimonials/>
+        <Platform/>
         </>
         
     )

@@ -1,0 +1,103 @@
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4d5;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.33);
+}
+.cCardhead{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FF6F61;
+}
+
+.cHead {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #4A90E2;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.cobutton {
+    display: block;
+    width: 30%;
+    padding: 12px;
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    justify-self: center;
+    font-size: 16px;
+}
+
+.cobutton:hover {
+    background-color: #4A90E2;
+}
+
+.info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.cocard{
+    display: block;
+    width: 355px;
+    padding: 15px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+}
+.cocardContent {
+    text-align:center;
+    color: gray;
+    line-height: 25px;
+    padding: 10px;
+}
+.cocardHead {
+    font-size: x-large;
+    font-weight:600;
+    text-align: center;
+    margin-bottom: 2px;
+    color: #4A90E2;
+}
+.coimg{
+    height: 1cm;
+    width: 1cm;
+   margin: 10px;
+    justify-self: center;
+}
+.coimg1{
+    height: 1.5cm;
+    width: 1.5cm;
+   
+    justify-self: center;
+}

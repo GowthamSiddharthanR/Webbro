@@ -1,6 +1,7 @@
+"use client"
 import React from 'react'
 import '../../CSS/Home/OurService.css'
-
+import { motion } from 'framer-motion'
 export default function OurService() {
   return (
     <div className='bg-[#F4F4F4]'>
@@ -10,7 +11,14 @@ export default function OurService() {
         We provide world-class technology services by constantly exploring and implementing innovative solutions
         that create long-term value for our customers.</h2>
       <div className='flex flex-wrap justify-evenly justify-center gap-5 items-center py-5 '>
-        <div className=''>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
 
           <a href="#" className="card card:hover">
 
@@ -18,8 +26,15 @@ export default function OurService() {
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           </a>
 
-        </div>
-        <div className=''>
+        </motion.div>
+        <motion.div
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
 
           <a href="#" className="card card:hover">
 
@@ -27,8 +42,15 @@ export default function OurService() {
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           </a>
 
-        </div>
-        <div className=''>
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
 
           <a href="#" className="card card:hover">
 
@@ -36,8 +58,15 @@ export default function OurService() {
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           </a>
 
-        </div>
-        <div className=''>
+        </motion.div>
+        <motion.div
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
 
           <a href="#" className="card card:hover">
 
@@ -45,8 +74,15 @@ export default function OurService() {
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           </a>
 
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
 
           <a href="#" className="card card:hover">
 
@@ -54,8 +90,15 @@ export default function OurService() {
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           </a>
 
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
 
           <a href="#" className="card card:hover">
 
@@ -63,8 +106,15 @@ export default function OurService() {
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           </a>
 
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
 
           <a href="#" className="card card:hover">
 
@@ -72,8 +122,15 @@ export default function OurService() {
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           </a>
 
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 0.8, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        >
 
           <a href="#" className="card card:hover">
 
@@ -81,7 +138,7 @@ export default function OurService() {
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           </a>
 
-        </div>
+        </motion.div>
       </div>
 
     </div>

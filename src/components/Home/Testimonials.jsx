@@ -1,6 +1,7 @@
 
 "use client"
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import '../../CSS/Home/Testimonials.css'
 
 
@@ -10,16 +11,12 @@ export default function Testimonials() {
     "https://www.thecambridgeschool.org/wp-content/uploads/2023/10/mary-barnes-1024x576.png",
     "https://www.thecambridgeschool.org/wp-content/uploads/2023/10/brady-1024x576.png",
     "https://www.thecambridgeschool.org/wp-content/uploads/2023/10/claire-1024x576.png",
-
-
   ];
   const images1 = [
-
     "https://www.thecambridgeschool.org/wp-content/uploads/2023/10/josh-1024x576.png",
     "https://www.thecambridgeschool.org/wp-content/uploads/2023/10/ryan-1024x576.png",
     "https://www.thecambridgeschool.org/wp-content/uploads/2024/01/alumni-liam-1024x576.png",
     "https://www.thecambridgeschool.org/wp-content/uploads/2023/10/hollin-1024x576.png",
-
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,7 +61,14 @@ export default function Testimonials() {
       <h1 className='thead'>Testimonials </h1>
       <h1 className='text-5xl text-center mt-[-20px] font-black text-stone-100'>&#x291A;&#x2919;</h1>
       <div className='lg:flex md:border-2 border-stone-100 rounded-2xl md:p-5 md:m-10'>
-        <div className='bg'>
+      <motion.div 
+          initial={{ x: -400, opacity: 0 }} // Start at size zero
+          whileInView={{ x: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 1, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        ><div className='bg'>
           <div className='slider-container'>
 
             <div className="slider-container">
@@ -78,7 +82,15 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
-        <div className='bg'>
+        </motion.div>
+        <motion.div 
+          initial={{ x: 400, opacity: 0 }} // Start at size zero
+          whileInView={{ x: 0, opacity: 1 }} // Transition to full size
+          transition={{
+            duration: 1, // Animation duration
+            ease: "easeInOut", // Easing function
+          }}
+        ><div className='bg'>
           <div className='slider-container'>
 
             <div className="slider-container">
@@ -92,6 +104,7 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
+        </motion.div>
       </div>
     </div>
 

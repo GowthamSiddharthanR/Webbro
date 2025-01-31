@@ -53,7 +53,7 @@ div.slabsolute {
     border: 10px solid white;
     background-color: white;
     border-radius: 100px 100px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 10px #aaaaaa;
 
 }
 div.srabsolute {
@@ -65,7 +65,7 @@ div.srabsolute {
     border: 10px solid white;
     background-color: white;
     border-radius: 100px 100px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: -5px 5px 10px 1px #aaaaaa;
 
 }
 
