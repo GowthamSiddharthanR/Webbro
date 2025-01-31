@@ -1,0 +1,34 @@
+.spara {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.scardHead {
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.scardContent {
+    text-align: left;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+.scard {
+    
+    display: block;
+    width: 500px;
+    padding: 15px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #4A90E2;
+}

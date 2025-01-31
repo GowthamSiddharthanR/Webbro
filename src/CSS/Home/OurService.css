@@ -1,0 +1,55 @@
+.heading1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #4A90E2;
+
+}
+
+.para {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #333333;
+}
+
+.cardHead {
+    font-size:x-large;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 2px;
+    color: #4A90E2;
+    ;
+}
+.cardContent {
+    text-align: left;
+    color: gray;
+    color: #333333;
+}
+.card{
+    display: block;
+    width: 350px;
+    padding: 15px;
+    height: 195px;
+    border-radius: 10px;
+    background-color:#F4F4F4;
+    box-shadow:2px 2px 2px 2px rgb(198, 193, 193);
+}
+.card:hover {
+    background-color: white;
+    width: 350px;
+    height: 195px;
+    border-top: 4px solid #4A90E2;
+    border-bottom: 4px solid #4A90E2;
+    animation: mymove 2s infinite;
+    
+}
+@keyframes mymove {
+    50% {border-bottom-right-radius: 50px;}
+    50% {border-top-left-radius: 50px;}
+  }
+

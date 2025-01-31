@@ -1,0 +1,61 @@
+h1.abhead{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #4A90E2;
+}
+.abPara{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    color: black;
+    line-height: 1.6;
+    font-weight: 400;
+  font-family: sans-serif;
+
+}
+h1.abhead1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+.abcard{
+    display: block;
+    width: 355px;
+    padding: 15px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+}
+.abcardContent {
+    text-align:center;
+    color: gray;
+}
+.abcardHead {
+    font-size: x-large;
+    font-weight:600;
+    text-align: center;
+    margin-bottom: 2px;
+    color: black;
+}
+.abimg{
+    height: 1.5cm;
+    width: 1.5cm;
+   
+    justify-self: center;
+    
+}
+.abimg1{
+    height: 1.3cm;
+    width: 1.3cm;
+   
+    justify-self: center;
+    
+}

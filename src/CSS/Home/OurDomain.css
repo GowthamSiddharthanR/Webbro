@@ -1,0 +1,88 @@
+.heading2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.para2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.cardHead2 {
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2px;
+    color: black;
+}
+
+.cardContent2 {
+    text-align: left;
+    color: gray;
+}
+
+
+
+
+.card2 {
+    display: block;
+    width: 350px;
+    padding: 15px;
+    height: 195px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+.card2:hover {
+    background-color: whitesmoke;
+    width: 350px;
+    height: 195px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    animation: mymove1 2s infinite;
+
+}
+
+@keyframes mymove1 {
+    50% {
+        border-bottom-left-radius: 50px;
+    }
+
+    50% {
+        border-top-right-radius: 50px;
+    }
+}
+
+.main {
+    background-color: #4A90E2;
+
+}
+
+div.relative {
+    position: relative;
+    z-index: 1
+}
+
+div.absolute {
+    position: absolute;
+    top: -10;
+    left: -10;
+    height: 50px;
+    width: 50px;
+    border: 10px solid white;
+    background-color: white;
+    border-radius: 100px 100px;
+    box-shadow: 5px 5px 5px grey;
+
+}

@@ -1,0 +1,23 @@
+.container1 {
+  display: inline-flex
+}
+
+.text1 {
+  font-size:xx-large;
+  font-weight:900;
+  letter-spacing: 1px;
+  font-family: auto;
+  border-right: 3.2px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 5s  infinite,
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {border-color: transparent;}
+}
+@keyframes typing {
+  from{width: 0;}
+}
