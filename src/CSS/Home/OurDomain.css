@@ -13,7 +13,7 @@
     padding-right: 30px;
     font-weight: 400;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     color: white;
 }
 
@@ -69,12 +69,12 @@
 
 }
 
-div.relative {
+div.relative1 {
     position: relative;
     z-index: 1
 }
 
-div.absolute {
+div.absolute1 {
     position: absolute;
     top: -10;
     left: -10;

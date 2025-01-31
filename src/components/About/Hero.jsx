@@ -20,7 +20,7 @@ export default function Hero() {
                             duration: 1.5, // Animation duration
                             ease: "easeInOut", // Easing function
                         }}
-                    ><img className='h-full w-full lg:w-[650] lg:h-[450]' src="/Images/aboutus.png" /></motion.div>
+                    ><img className='h-[100%] w-[100%] lg:w-[650] lg:h-[450]' src="/Images/aboutus.png" /></motion.div>
                 </div>
                 <div className='w-[100%]  pt-5' >
                 <motion.div

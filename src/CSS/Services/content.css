@@ -14,10 +14,17 @@
     color: white;
 }
 
-.scardContent {
+.slcardContent {
     text-align: left;
     color: white;
     padding: 10px;
+    
+}
+.srcardContent {
+    text-align: right;
+    color: white;
+    padding: 10px;
+    
 }
 
 
@@ -32,3 +39,33 @@
     border-radius: 5px;
     background-color: #4A90E2;
 }
+div.srelative {
+    position: relative;
+    z-index: 1
+}
+
+div.slabsolute {
+    position: absolute;
+    right: 0;
+    top:20%;
+    height: 180px;
+    width: 180px;
+    border: 10px solid white;
+    background-color: white;
+    border-radius: 100px 100px;
+    box-shadow: 5px 5px 5px grey;
+
+}
+div.srabsolute {
+    position: absolute;
+    left: 0;
+    top:20%;
+    height: 180px;
+    width: 180px;
+    border: 10px solid white;
+    background-color: white;
+    border-radius: 100px 100px;
+    box-shadow: 5px 5px 5px grey;
+
+}
+

@@ -10,8 +10,8 @@ export default function OurDomain() {
         We are well suited to transform a complex business problem into a simple solution.</h2>
       <div className='flex flex-wrap justify-evenly justify-center items-center gap-5  '>
 
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -22,8 +22,8 @@ export default function OurDomain() {
           </a>
         </div>
 
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -34,8 +34,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
           <a href="#" className="card2 card2:hover">
@@ -45,8 +45,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
           <a href="#" className="card2 card2:hover">
@@ -56,8 +56,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -68,8 +68,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -80,8 +80,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -93,8 +93,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -105,8 +105,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -118,8 +118,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -130,8 +130,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
@@ -142,8 +142,8 @@ export default function OurDomain() {
           </a>
 
         </div>
-        <div className='relative'>
-          <div className="absolute">
+        <div className='relative1'>
+          <div className="absolute1">
             <img src='/svg/quality.svg' />
           </div>
 
