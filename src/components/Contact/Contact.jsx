@@ -22,7 +22,7 @@ export default function Contact() {
         console.log("cccccccccc")
         setStatus("Sending...");
         try {
-            const response = await fetch("http://localhost:3000/api/sendMail", {
+            const response = await fetch("/api/sendMail", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -86,8 +86,8 @@ export default function Contact() {
                                         type="text"
                                         placeholder=" Message"></textarea>
 
-                                    <button className="cobutton cobutton:hover" type="submit">Send Message</button>
-                                    <p className="mx-5 text-center">status : {status}</p>
+                                    <button className="cobutton " type="submit">Send Message</button>
+                                    <p className="mx-5 text-center"> {status}</p>
                                 </form>
                             </div>
                         </motion.div>
@@ -134,8 +134,6 @@ export default function Contact() {
                                 <p>605100</p>
                             </div>
                         </a>
-
-
                     </div></motion.div>
             </div>
         </div>
