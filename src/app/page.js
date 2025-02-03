@@ -1,9 +1,18 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+"use client"
 import LoginPage from "@/components/LoginPage";
-import Image from "next/image";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 export default function Home() {
+  useEffect(()=>{
+    const lenis = new Lenis();
+    const time = 1000;
+    const raf = (time) => {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  },[])
   return (
     <>
    <LoginPage/>
@@ -12,11 +21,3 @@ export default function Home() {
 }
 
 
-// {/* Primary (Deep Blue: #0D3B66)
-// Main color for branding, headlines, buttons, and key elements.
-// Secondary (Soft Yellow: #FAF0CA)
-// Backgrounds or sections to provide a soft, warm feeling.
-// Accent (Bright Yellow: #F4D35E)
-// For highlights, call-to-action buttons, links, and hover effects.
-// Neutral (White: #FFFFFF and Dark Gray: #3E3E3E)
-// Backgrounds, body text, and contrast for readability. */}

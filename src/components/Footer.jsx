@@ -1,45 +1,59 @@
+import React from 'react'
+import "../CSS/Footer.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
+export default function Footer1() {
+    return (
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="footer-section">
+                    <img className="h-[70%] w-[80%] ml-8" alt="Logo Icon" title="Logo Icon" src="Images/logo.png" />
+                    <h1 className='text-2xl font-bold text-center font-poppins '><span className='text-[#d95245]'>W</span>EB<span className='text-[#d95245]'>B</span>RO</h1>
 
+                    {/* <a href="/about">Learn More</a> */}
+                </div>
 
-export default function Footer() {
-  return (
-    <footer className="bg-[#4A90E2] text-white  py-8">
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center">
-        <div>
-        <img className = "h-[150px] w-[180px] " alt="Logo Icon" title="Logo Icon" src="https://static.vecteezy.com/system/resources/thumbnails/038/516/357/small_2x/ai-generated-eagle-logo-design-in-black-style-on-transparant-background-png.png" />
-        </div>
-        <div className="text-center mb-4">
-          <p className="font-semibold text-lg">Connect with us</p>
-        </div>
-        <div className="flex space-x-6">
-          <a
-            href="#facebook"
-            className="hover:text-yellow-400 hover:underline transition-all duration-300"
-          >
-            Facebook
-          </a>
-          <a
-            href="#twitter"
-            className="hover:text-yellow-400 hover:underline transition-all duration-300"
-          >
-            Twitter
-          </a>
-          <a
-            href="#linkedin"
-            className="hover:text-yellow-400 hover:underline transition-all duration-300"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="#github"
-            className="hover:text-yellow-400 hover:underline transition-all duration-300"
-          >
-            GitHub
-          </a>
-        </div>
-        <div className="mt-4 text-sm">
-          <p>&copy; 2025 MyWebsite. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
-  );
+                <div className="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><Link href="/home">Home</Link></li>
+                        <li><Link href="/services">Services</Link></li>
+                        <li><Link href="/about">About</Link></li>
+                        <li><Link href="/contact">Contact Us</Link></li>
+                    </ul>
+                </div>
+
+                <div className="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:info@webbro.com">info@yourwebsite.com</a></p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Address: No: 01, Whitefield cross, </p>
+                    <p>Main road, Pondicherry</p>
+                    <p>605100</p>
+                </div>
+
+                <div className="footer-section">
+                    <h4>Follow Us</h4>
+                    <div className="social-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faFacebook} /> </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faTwitter} />
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="footer-bottom">
+                <p>&copy; 2025 WEBBRO. All Rights Reserved.</p>
+            </div>
+        </footer>
+    )
 }

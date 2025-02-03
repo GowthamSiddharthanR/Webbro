@@ -62,8 +62,8 @@ export default function Testimonials() {
       <h1 className='text-5xl text-center mt-[-20px] font-black text-stone-100'>&#x291A;&#x2919;</h1>
       <div className='lg:flex md:border-2 border-stone-100 rounded-2xl md:p-5 md:m-10'>
       <motion.div 
-          initial={{ x: -400, opacity: 0 }} // Start at size zero
-          whileInView={{ x: 0, opacity: 1 }} // Transition to full size
+          initial={{ y: -150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
           transition={{
             duration: 1, // Animation duration
             ease: "easeInOut", // Easing function
@@ -84,8 +84,8 @@ export default function Testimonials() {
         </div>
         </motion.div>
         <motion.div 
-          initial={{ x: 400, opacity: 0 }} // Start at size zero
-          whileInView={{ x: 0, opacity: 1 }} // Transition to full size
+          initial={{ y: 150, opacity: 0 }} // Start at size zero
+          whileInView={{ y: 0, opacity: 1 }} // Transition to full size
           transition={{
             duration: 1, // Animation duration
             ease: "easeInOut", // Easing function

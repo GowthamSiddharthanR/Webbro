@@ -2,9 +2,45 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../../CSS/Contact/Contact.css'
+import { useState } from "react"
+
 
 
 export default function Contact() {
+    const [status, setStatus] = useState("");
+    const [formData, setFormData] = useState({
+        name: "",
+        message: "",
+        email: "",
+    });
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log("cccccccccc")
+        setStatus("Sending...");
+        try {
+            const response = await fetch("http://localhost:3000/api/sendMail", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setStatus("Message sent!");
+                setFormData({ name: "", message: "", email: "" });
+            } else {
+                setStatus("Failed to send message.");
+            }
+        } catch (error) {
+            setStatus("Error occurred.");
+
+        }
+    };
     return (
         <div>
             <div className='bg-[#F4F4F4]'>
@@ -22,17 +58,36 @@ export default function Contact() {
                         >
                             <div className="container">
                                 <h1 className='cCardhead'>Lets Start a Conversation!</h1>
-                                <form action="submit_form.php" method="POST">
-                                    <label className="text-[#FF6F61] font-semibold" htmlFor="name">Your Name</label>
-                                    <input placeholder="Name" type="text" id="name" name="name" required />
+                                <form onSubmit={handleSubmit}>
+                                    <label className="text-[#FF6F61] font-semibold" htmlFor="email">Name : </label>
+                                    <input className="border p-1"
+                                        required
+                                        onChange={handleChange}
+                                        value={formData.name}
+                                        name="name"
+                                        type="text"
+                                        placeholder=" Enter name"  ></input>
 
-                                    <label className="text-[#FF6F61] font-semibold" htmlFor="email">Your Email</label>
-                                    <input placeholder="Email" type="email" id="email" name="email" required />
+                                    <label className="text-[#FF6F61] font-semibold" htmlFor="email">Mail : </label>
+                                    <input className="border p-1"
+                                        required
+                                        onChange={handleChange}
+                                        value={formData.email}
+                                        name="email"
+                                        type="email"
+                                        placeholder=" MailId" ></input>
 
-                                    <label className="text-[#FF6F61] font-semibold" htmlFor="message">Your Message</label>
-                                    <textarea className="mb-4" placeholder="Message" id="message" name="message" required></textarea>
+                                    <label className="text-[#FF6F61] font-semibold" htmlFor="email">Message : </label>
+                                    <textarea className="border p-1"
+                                        required
+                                        onChange={handleChange}
+                                        value={formData.message}
+                                        name="message"
+                                        type="text"
+                                        placeholder=" Message"></textarea>
 
-                                    <a className="cobutton cobutton:hover" type="submit">Send Message</a>
+                                    <button className="cobutton cobutton:hover" type="submit">Send Message</button>
+                                    <p className="mx-5 text-center">status : {status}</p>
                                 </form>
                             </div>
                         </motion.div>
@@ -67,17 +122,17 @@ export default function Contact() {
                         <a href="#" className=" cocard ">
                             <img className="coimg1 " src='/svg/mail.svg' />
                             <h5 className="cocardHead">Mail</h5>
-                            <div className="cocardContent"><p>contact@webbro.com</p><p>spartansfire@webbro.com</p></div>
+                            <div className="cocardContent"><p>contact@webbro.com</p><p>info@webbro.com</p></div>
                         </a>
                         <a href="#" className=" cocard">
                             <img className="coimg " src='/svg/location.svg' />
                             <h5 className="cocardHead">Location</h5>
                             <div className="cocardContent">
                                 <p>WEBBRO Softwares</p>
-                                <p>No:01, Whitefield cross, </p>
+                                <p>No: 01, Whitefield cross, </p>
                                 <p>Main road, Pondicherry</p>
                                 <p>605100</p>
-                                </div>
+                            </div>
                         </a>
 
 

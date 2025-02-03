@@ -4,7 +4,7 @@ import '../../CSS/Home/OurService.css'
 import { motion } from 'framer-motion'
 export default function OurService() {
   return (
-    <div className='bg-[#F4F4F4]'>
+    <div className='bg-[#F4F4F4] p-5'>
       <div className='heading1'>Our Services</div>
       <h1 className='text-5xl text-center mt-[-20px] text-[#FF6F61] font-black '>&#x291A;&#x2919;</h1>
       <h2 className='para'>We provide customers with high-quality, dependable, and cost-effective IT services.

@@ -10,21 +10,32 @@
     animation: scroll 20s linear infinite;
   }
   
-  .platform-img {
-    width: 150px; /* Adjust size of images */
-    margin-right: 20px; /* Space between images */
-  }
+
+  .pheading{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #4A90E2;
+
+}
   
   @keyframes scroll {
     0% {
-      transform: translateX(100%);
+      transform: translateX(50%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
   }
   
 
+  .platform-img1 {
+    height: 2cm; /* Adjust size of images */
+    width: 2cm;
+    margin-right: 2cm;  /* Space between images */
+  }
   
   .platform-img{
     height: 2cm;
