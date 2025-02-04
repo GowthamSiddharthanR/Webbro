@@ -32,7 +32,7 @@ export default function RegisterPage() {
                                             href="#"
                                             title="Use Google"
                                         >
-                                            <img src="/Images/Gmail Icon.png" alt="Google" />
+                                            <img src="/svg/google.svg" alt="Google" />
                                             Log in with Google
                                         </a>
 
