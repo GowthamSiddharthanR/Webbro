@@ -1,0 +1,39 @@
+.prcard {
+    
+    display: block;
+    height: 60%;
+    width:60%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4A90E2;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    padding: 1cm;
+    justify-self: center;
+    
+}
+@media screen and (max-width: 1024px) {
+    .prcard {
+    
+        display: block;
+        height: 50%;
+        width:80%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #4A90E2;
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+        padding: 1cm;
+        justify-self: center;
+        
+    }
+  }
+  .prheading {
+    text-align: center;
+    
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+
+}

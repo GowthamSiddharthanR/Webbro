@@ -59,34 +59,36 @@ export default function Contact() {
                             <div className="container">
                                 <h1 className='cCardhead'>Lets Start a Conversation!</h1>
                                 <form onSubmit={handleSubmit}>
-                                    <label className="text-[#FF6F61] font-semibold" htmlFor="email">Name : </label>
-                                    <input className="border p-1"
-                                        required
-                                        onChange={handleChange}
-                                        value={formData.name}
-                                        name="name"
-                                        type="text"
-                                        placeholder=" Enter name"  ></input>
+                                    <div>
+                                        <label className="text-[#FF6F61] font-semibold" htmlFor="email">Name : </label>
+                                        <input className="border p-1"
+                                            required
+                                            onChange={handleChange}
+                                            value={formData.name}
+                                            name="name"
+                                            type="text"
+                                            placeholder=" Enter name"  ></input>
 
-                                    <label className="text-[#FF6F61] font-semibold" htmlFor="email">Mail : </label>
-                                    <input className="border p-1"
-                                        required
-                                        onChange={handleChange}
-                                        value={formData.email}
-                                        name="email"
-                                        type="email"
-                                        placeholder=" MailId" ></input>
+                                        <label className="text-[#FF6F61] font-semibold" htmlFor="email">Mail : </label>
+                                        <input className="border p-1"
+                                            required
+                                            onChange={handleChange}
+                                            value={formData.email}
+                                            name="email"
+                                            type="email"
+                                            placeholder=" MailId" ></input>
 
-                                    <label className="text-[#FF6F61] font-semibold" htmlFor="email">Message : </label>
-                                    <textarea className="border p-1"
-                                        required
-                                        onChange={handleChange}
-                                        value={formData.message}
-                                        name="message"
-                                        type="text"
-                                        placeholder=" Message"></textarea>
-
-                                    <button className="cobutton " type="submit">Send Message</button>
+                                        <label className="text-[#FF6F61] font-semibold" htmlFor="email">Message : </label>
+                                        <textarea className="border p-1"
+                                            required
+                                            onChange={handleChange}
+                                            value={formData.message}
+                                            name="message"
+                                            type="text"
+                                            placeholder=" Message"></textarea>
+                                    </div>
+                                    <button 
+                                        className="cobutton" type="submit">Send Message</button>
                                     <p className="mx-5 text-center"> {status}</p>
                                 </form>
                             </div>

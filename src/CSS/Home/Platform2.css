@@ -1,0 +1,34 @@
+/* second div  */
+.scroll-container1 {
+    width: 100%; /* Adjust width of the container */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    
+  }
+  
+  .scroll-line1 {
+    display: flex;
+    animation: scroll 15s linear infinite;
+  }
+  
+
+
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(20%);
+    }
+    100% {
+      transform: translateX(-80%);
+    }
+  }
+  
+
+  
+  .platform-img2{
+    height: 5cm;
+    width: 5cm;
+    padding: 10px;
+    margin-right: 2cm;
+    object-fit: contain;
+  }

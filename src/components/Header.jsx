@@ -27,8 +27,9 @@ const Header = () => {
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-6">
                     <Link href="/home" className="hover:text-gray-400">Home</Link>
-                    <Link href="/about" className="hover:text-gray-400">About</Link>
+                    <Link href="/products" className="hover:text-gray-400">Products</Link>
                     <Link href="/services" className="hover:text-gray-400">Services</Link>
+                    <Link href="/about" className="hover:text-gray-400">About</Link>
                     <Link href="/contact" className="hover:text-gray-400">Contact</Link>
 
                     {/* Logout Button */}
@@ -65,8 +66,9 @@ const Header = () => {
                         </div>
                         <ul className="flex flex-col items-center space-y-3 pb-4">
                             <li><Link href="/home" className="hover:text-gray-400" onClick={closeMobileMenu}>Home</Link></li>
-                            <li><Link href="/about" className="hover:text-gray-400" onClick={closeMobileMenu}>About</Link></li>
                             <li><Link href="/services" className="hover:text-gray-400" onClick={closeMobileMenu}>Services</Link></li>
+                            <li><Link href="/products" className="hover:text-gray-400" onClick={closeMobileMenu}>Products</Link></li>
+                            <li><Link href="/about" className="hover:text-gray-400" onClick={closeMobileMenu}>About</Link></li>
                             <li><Link href="/contact" className="hover:text-gray-400" onClick={closeMobileMenu}>Contact</Link></li>
                             <li>
                                 <Link href={"/"}> <div

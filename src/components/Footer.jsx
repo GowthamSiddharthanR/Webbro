@@ -18,6 +18,7 @@ export default function Footer1() {
                     <h4>Quick Links</h4>
                     <ul>
                         <li><Link href="/home">Home</Link></li>
+                        <li><Link href="/products">Products</Link></li>
                         <li><Link href="/services">Services</Link></li>
                         <li><Link href="/about">About</Link></li>
                         <li><Link href="/contact">Contact Us</Link></li>
@@ -26,7 +27,7 @@ export default function Footer1() {
 
                 <div className="footer-section">
                     <h4>Contact Us</h4>
-                    <p>Email: <a href="mailto:info@webbro.com">info@yourwebsite.com</a></p>
+                    <p>Email: <a href="mailto:info@webbro.com">info@webbro.com</a></p>
                     <p>Phone: +91 9876543210</p>
                     <p>Address: No: 01, Whitefield cross, </p>
                     <p>Main road, Pondicherry</p>

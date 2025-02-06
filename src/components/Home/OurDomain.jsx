@@ -6,10 +6,10 @@ export default function OurDomain() {
   return (
     <div className='main'>
       <div className='heading2'>Our Domain Expertise</div>
-      <h1 className='text-5xl text-center mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
+      <h1 className='text-5xl text-center mb-5 mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
       <h2 className='para2'>As domain experts, but also with excellent technological skills,
         We are well suited to transform a complex business problem into a simple solution.</h2>
-      <div className='flex flex-wrap justify-evenly justify-center items-center gap-5  '>
+      <div className='flex flex-wrap justify-evenly justify-center items-center  md:mb-10 gap-5  '>
 
        <motion.div className='relative1'
           initial={{ y: 100, opacity: 0 }} // Start at size zero
@@ -20,7 +20,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/crm.svg' />
           </div>
 
           <a href="#" className=" card2 card2:hover">
@@ -39,7 +39,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/calculator.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">
@@ -58,7 +58,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/pair.svg' />
           </div>
           <a href="#" className="card2 card2:hover">
 
@@ -76,7 +76,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/cart.svg' />
           </div>
           <a href="#" className="card2 card2:hover">
 
@@ -94,7 +94,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/money.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">
@@ -113,7 +113,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/heart.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">
@@ -132,7 +132,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/school.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">
@@ -152,7 +152,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/bank.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">
@@ -171,7 +171,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/book.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">
@@ -191,7 +191,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/camera.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">
@@ -210,7 +210,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/bill.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">
@@ -229,7 +229,7 @@ export default function OurDomain() {
           }}
         >
           <div className="absolute1">
-            <img src='/svg/quality.svg' />
+            <img src='/svg/pig.svg' />
           </div>
 
           <a href="#" className="card2 card2:hover">

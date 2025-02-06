@@ -10,7 +10,7 @@ export default function OurService() {
       <h2 className='para'>We provide customers with high-quality, dependable, and cost-effective IT services.
         We provide world-class technology services by constantly exploring and implementing innovative solutions
         that create long-term value for our customers.</h2>
-      <div className='flex flex-wrap justify-evenly justify-center gap-5 items-center py-5 '>
+      <div className='flex flex-wrap justify-evenly justify-center gap-5 items-center  md:mb-10 py-5 '>
         <motion.div
           initial={{ y: 100, opacity: 0 }} // Start at size zero
           whileInView={{ y: 0, opacity: 1 }} // Transition to full size

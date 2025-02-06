@@ -8,6 +8,7 @@ import Testimonials from "@/components/Home/Testimonials";
 import { useEffect } from "react";
 
 import Platform from "@/components/Home/Platform";
+import Portfolio from "@/components/Home/Portfolio";
 
 export default function home(){
    useEffect(()=>{
@@ -24,6 +25,7 @@ export default function home(){
         <Hero/>
         <OurService/>
         <OurDomain/>
+        <Portfolio/>
         <Testimonials/>
         <Platform/>
      

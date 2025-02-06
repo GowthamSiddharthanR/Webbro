@@ -72,11 +72,11 @@ export default function Testimonials() {
           <div className='slider-container'>
 
             <div className="slider-container">
-              <button onClick={prevSlide} className="prev-btn">
+              <button onClick={prevSlide} className=" button1 prev-btn">
                 &#10094;
               </button>
               <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="slider-img" />
-              <button onClick={nextSlide} className="next-btn">
+              <button onClick={nextSlide} className=" button1 next-btn">
                 &#10095;
               </button>
             </div>
@@ -94,11 +94,11 @@ export default function Testimonials() {
           <div className='slider-container'>
 
             <div className="slider-container">
-              <button onClick={prevSlide1} className="prev-btn">
+              <button onClick={prevSlide1} className="button1 prev-btn">
                 &#10094;
               </button>
               <img src={images1[currentIndex1]} alt={`Slide ${currentIndex1}`} className="slider-img" />
-              <button onClick={nextSlide1} className="next-btn">
+              <button onClick={nextSlide1} className=" button1 next-btn">
                 &#10095;
               </button>
             </div>

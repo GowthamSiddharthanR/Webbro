@@ -21,14 +21,7 @@
 
 }
   
-  @keyframes scroll {
-    0% {
-      transform: translateX(50%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
+
   
 
   .platform-img1 {
@@ -43,3 +36,8 @@
     padding: 10px;
     margin-right: 2cm;
   }
+
+
+
+
+  

@@ -1,0 +1,32 @@
+.pomain{
+    background-image: url("/Images/pimg3.jpg");
+    padding: 10px;
+    object-fit:fill;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    
+}
+.poheading{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #4A90E2;
+}
+.poimg{
+    display: block;
+    width: 450px;
+    padding: 0px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit:fill;
+    transition: transform .2s;
+}
+.poimg:hover{
+    transform: scale(1.2);
+}
+    
+
+
