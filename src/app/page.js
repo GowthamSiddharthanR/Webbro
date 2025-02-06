@@ -2,6 +2,7 @@
 import LoginPage from "@/components/LoginPage";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import Start from "@/components/Start";
 
 export default function Home() {
   useEffect(()=>{
@@ -15,7 +16,7 @@ export default function Home() {
   },[])
   return (
     <>
-   <LoginPage/>
+   <Start/>
     </>
   );
 }

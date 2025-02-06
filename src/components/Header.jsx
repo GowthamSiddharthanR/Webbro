@@ -20,7 +20,7 @@ const Header = () => {
                 {/* Logo and Name */}
                 <div className="flex items-center space-x-2">
                 <img className = "h-[60px] w-[70px] " alt="Logo Icon" title="Logo Icon" src="/Images/logoupdate.png" />
-                <h1 className='text-2xl font-bold font-poppins '>
+                <h1 className='text-2xl tracking-[1px] font-bold font-poppins '>
                     <span className='text-[#d95245]'>W</span>EB<span className='text-[#d95245]'>B</span>RO</h1>
                 </div>
 
@@ -35,10 +35,10 @@ const Header = () => {
                     {/* Logout Button */}
                   <Link href={"/"}>  <div
                         type="button"
-                        onClick={() => alert('You are Logging out...')}
+                        onClick={() => alert('Back to Dashboard?')}
                         className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md"
                     >
-                        Logout
+                        Dashboard
                     </div></Link>
                 </nav>
 
@@ -73,10 +73,10 @@ const Header = () => {
                             <li>
                                 <Link href={"/"}> <div
                                     type="button"
-                                    onClick={() => alert('Logging out...')}
+                                    onClick={() => alert('Back to Dashboard?')}
                                     className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md"
                                 >
-                                    Logout
+                                   Dashboard
                                 </div></Link>
                             </li>
                         </ul>
