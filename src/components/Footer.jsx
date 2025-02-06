@@ -8,7 +8,7 @@ export default function Footer1() {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-section">
-                    <img className="h-[70%] w-[80%] ml-8" alt="Logo Icon" title="Logo Icon" src="Images/logo.png" />
+                    <img className="h-[70%] w-[80%] ml-8" alt="Logo Icon" title="Logo Icon" src="Images/logoupdate.png" />
                     <h1 className='text-2xl font-bold text-center font-poppins '><span className='text-[#d95245]'>W</span>EB<span className='text-[#d95245]'>B</span>RO</h1>
 
                     {/* <a href="/about">Learn More</a> */}
