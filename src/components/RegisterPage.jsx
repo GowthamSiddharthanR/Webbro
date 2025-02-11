@@ -1,101 +1,63 @@
 "use client"
+import React, { useState } from 'react'
+import "../CSS/RegisterPage.css"
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import '../CSS/LoginPage.css';
-import { motion } from 'framer-motion';
 export default function RegisterPage() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const[success,setSuccess]=useState("");
+    const router= useRouter();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (!name || !email || !password) {
+            setError("All fields are required!");
+            return;
+        } else {
+            setError("")
+        }
+        try {
+            const res = await fetch("/api/register", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    password,
+                }),
+            });
+            if(res.ok){
+                const form = e.target;
+                form.reset();
+                setSuccess("Registered Sucessfully");
+                router.push("/login");
+            }else{
+                console.log("error ocurrs")
+            }
+        } catch (error) {
+            console.log("error occured",error)
+        }
+    }
     return (
-        <>
-            <>
-                <motion.div className='overflow-hidden'
-                    // animate={{ x: 0, opacity: 1 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    initial={{ x: 500, opacity: 0 }}
-                    transition={{ duration: 1 }}
-                    style={{
-                        width: "auto",
-                        height: "auto",
-                        backgroundColor: "auto",
-                    }}
-                > <div >
-                        <div className="wave"></div>
-                        <div className="wave"></div>
-                        <div className="wave"></div>
-                        <div className="wave"></div>
-                    </div>
-                    <div className="login-wrapper">
-                        <div className="login-side">
-                            <div className="my-form__wrapper">
-                                
-                                <form className="my-form">
-                                    <div className="socials-row">
-                                        <a
-                                            href="#"
-                                            title="Use Google"
-                                        >
-                                            <img src="/svg/google.svg" alt="Google" />
-                                            Log in with Google
-                                        </a>
-
-                                    </div>
-                                    <div className="divider">
-                                        <div className="divider-line"></div>
-                                        Or
-                                        <div className="divider-line"></div>
-                                    </div>
-                                    <div className="text-field">
-                                        <label >User name:</label>
-                                        <input
-                                            type="text"
-                                            id="text"
-                                            name="text"
-                                            placeholder="First name"
-                                            required
-                                        ></input>
-
-                                    </div>
-                                    <div className="text-field">
-                                        <label htmlFor="email">Email:</label>
-                                        <input
-                                            type="email"
-                                            id="email"
-                                            name="email"
-                                            placeholder="Your Email"
-                                            required
-                                        ></input>
-
-                                    </div>
-
-                                    <div className="text-field">
-                                        <label htmlFor="password">Password:</label>
-                                        <input
-                                            id="password"
-                                            type="password"
-                                            name="password"
-                                            placeholder="Your Password"
-                                            title="Minimum 6 characters at 
-                                    least 1 Alphabet and 1 Number"
-                                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
-                                            required
-                                        ></input>
-                                        <img className="lock" alt="Password Icon" src="/Images/PASSWORD.png" />
-                                    </div>
-                                    <input type="submit" className="my-form__button" value="Create Account" />
-                                    <div className="my-form__actions">
-
-                                        <div className="text-center flex-column ">
-                                            <div><span>Already have an account?</span></div>
-                                            <div className="my-form__signup"><Link href="/" title="Create Account" >
-                                                Login
-                                            </Link></div>
-                                        </div>
-                                        <span>---------------------------------------------------</span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-            </>
-        </>
+        <div className='regbody'>
+            <div className="register-container">
+            {success && (
+                        <div className='bg-blue-500 text-white'>{success}</div>
+                    )}
+                <h2>Register</h2>
+                <form onSubmit={handleSubmit}>
+                    <input onChange={(e) => setName(e.target.value)} type="text" placeholder="Username" />
+                    <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email" />
+                    <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" />
+                    <button type="submit">Register</button>
+                    {error && (
+                        <div className='bg-red-500 mt-2 text-white'>{error}</div>
+                    )}
+                    <Link href={"/login"}><h1 className='mt-5 text-right text-sm '>Already have an account? <span className='underline'>Login</span></h1></Link>
+                </form>
+            </div>
+        </div>
     )
 }

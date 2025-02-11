@@ -22,11 +22,9 @@
     height: 350px;
     border-radius: 10px;
     object-fit:fill;
-    transition: transform .2s;
+    
 }
-.poimg:hover{
-    transform: scale(1.2);
-}
+
     
 
 

@@ -9,7 +9,7 @@ const LayoutWrapper = ({ children }) => {
   const pathname = usePathname(); // Access the pathname here
 
   // List of paths where the header and footer should be hidden
-  const noLayoutPages = ["/", "/register"];
+  const noLayoutPages = ["/", "/register","/login","/test"];
 
   // Check if the current page is in the noLayoutPages list
   const isNoLayoutPage = noLayoutPages.includes(pathname);

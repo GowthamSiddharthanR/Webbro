@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import 'typeface-poppins';
+import { signOut } from 'next-auth/react';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,6 +14,7 @@ const Header = () => {
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false);
     };
+   
 
     return (
         <header className="bg-[#4A90E2] text-white py-1 sticky top-0 z-50 px-10 ">
@@ -33,13 +35,13 @@ const Header = () => {
                     <Link href="/contact" className="hover:text-gray-400">Contact</Link>
 
                     {/* Logout Button */}
-                  <Link href={"/"}>  <div
-                        type="button"
-                        onClick={() => alert('Back to Dashboard?')}
+                   <button
+                 
+                        onClick={()=>signOut()}
                         className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md"
                     >
-                        Dashboard
-                    </div></Link>
+                        Sign Out
+                    </button>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -71,13 +73,13 @@ const Header = () => {
                             <li><Link href="/about" className="hover:text-gray-400" onClick={closeMobileMenu}>About</Link></li>
                             <li><Link href="/contact" className="hover:text-gray-400" onClick={closeMobileMenu}>Contact</Link></li>
                             <li>
-                                <Link href={"/"}> <div
+                                <div
                                     type="button"
-                                    onClick={() => alert('Back to Dashboard?')}
+                                    onClick={()=>signOut()}
                                     className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md"
                                 >
-                                   Dashboard
-                                </div></Link>
+                                   Sign Out
+                                </div>
                             </li>
                         </ul>
                     </nav>

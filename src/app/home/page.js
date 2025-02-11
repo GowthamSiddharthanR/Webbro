@@ -9,6 +9,7 @@ import { useEffect } from "react";
 
 import Platform from "@/components/Home/Platform";
 import Portfolio from "@/components/Home/Portfolio";
+import { signOut } from "next-auth/react";
 
 export default function home(){
    useEffect(()=>{
