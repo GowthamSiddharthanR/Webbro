@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import "../CSS/RegisterPage.css"
+import { motion } from 'framer-motion';
+import "../CSS/LoginRegister.css"
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 export default function RegisterPage() {
@@ -8,8 +9,8 @@ export default function RegisterPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
-    const[success,setSuccess]=useState("");
-    const router= useRouter();
+    const [success, setSuccess] = useState("");
+    const router = useRouter();
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!name || !email || !password) {
@@ -28,24 +29,31 @@ export default function RegisterPage() {
                     password,
                 }),
             });
-            if(res.ok){
+            if (res.ok) {
                 const form = e.target;
                 form.reset();
                 setSuccess("Registered Sucessfully");
                 router.push("/login");
-            }else{
+            } else {
                 console.log("error ocurrs")
             }
         } catch (error) {
-            console.log("error occured",error)
+            console.log("error occured", error)
         }
     }
     return (
-        <div className='regbody'>
-            <div className="register-container">
-            {success && (
-                        <div className='bg-blue-500 text-white'>{success}</div>
-                    )}
+        <div className="auth-container">
+            <motion.div
+                initial={{ opacity: 0, y: 200 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 1 }}
+                className="auth-card"
+            >
+                
+                {success && (
+                    <div className='bg-blue-500 text-white'>{success}</div>
+                )}
                 <h2>Register</h2>
                 <form onSubmit={handleSubmit}>
                     <input onChange={(e) => setName(e.target.value)} type="text" placeholder="Username" />
@@ -53,11 +61,13 @@ export default function RegisterPage() {
                     <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" />
                     <button type="submit">Register</button>
                     {error && (
-                        <div className='bg-red-500 mt-2 text-white'>{error}</div>
+                        <div className='bg-red-500 mt-2 text-left px-2 rounded-md w-fit text-sm text-white'>{error}</div>
                     )}
                     <Link href={"/login"}><h1 className='mt-5 text-right text-sm '>Already have an account? <span className='underline'>Login</span></h1></Link>
+
                 </form>
-            </div>
+
+            </motion.div>
         </div>
     )
 }

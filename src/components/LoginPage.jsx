@@ -1,25 +1,26 @@
 "use client"
 import React, { useState } from 'react'
-import "../CSS/LoginPage.css"
+import { motion } from 'framer-motion';
+import "../CSS/LoginRegister.css"
 import Link from 'next/link';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 export default function LoginPage() {
-    const [email,setEmail]=useState("");
-    const [password,setPassword]=useState("");
-    const [error,setError]=useState("");
-    const router=useRouter();
-    const handleSubmit=async (e)=>{
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const router = useRouter();
+    const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-           const res = await signIn("credentials",{
+            const res = await signIn("credentials", {
                 email,
                 password,
-                redirect:false,
+                redirect: false,
             });
-            if(res.error){
+            if (res.error) {
                 setError("invalid credential");
-                return ;
+                return;
             }
             router.replace("/home");
         } catch (error) {
@@ -27,19 +28,30 @@ export default function LoginPage() {
         }
     }
     return (
-        <div className='logbody'>
-            <div className="login-container">
+        <div className="auth-container">
+            <motion.div
+                initial={{ opacity: 0, y: -200 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 1 }}
+                className="auth-card"
+            >
                 <h2>Login</h2>
                 <form onSubmit={handleSubmit}>
-                    <input onChange={(e)=>setEmail(e.target.value)} type="text" placeholder="Email" required/>
-                    <input onChange={(e)=>setPassword(e.target.value)} type="password" placeholder="Password" required/>
+                    <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email" required />
+                    <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" required />
                     <button type="submit">Login</button>
+                    
                     {error && (
-                        <div className='bg-red-500 mt-2 text-white'>{error}</div>
-                    ) }
+                        <div className='bg-red-500 mt-2 text-left px-2 rounded-md w-fit text-sm text-white'>{error}</div>
+                    )}
                     <Link href={"/register"}><h1 className='mt-5 text-right text-sm '>Dont't have an account? <span className='underline'>Register</span></h1></Link>
+
                 </form>
-            </div>
+
+            </motion.div>
         </div>
+
     )
 }
+
