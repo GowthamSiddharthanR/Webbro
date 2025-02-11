@@ -22,7 +22,7 @@ const Header = () => {
 
 
     return (
-        <header className="bg-[#4A90E2] text-white py-1 sticky top-0 z-50 px-10 ">
+        <header className="bg-[#4A90E2] text-white py-1 sticky top-0 z-50 px-2 md:px-10 ">
             <div className="w-auto mx-auto flex justify-between items-center">
                 {/* Logo and Name */}
                 <div className="flex items-center space-x-2">
@@ -44,7 +44,7 @@ const Header = () => {
                     <div className="relative inline-block text-left">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="px-3 py-2 bg-[#d95245] flex items-center text-white rounded-md"
+                            className="px-3 py-2 bg-[#d95245] hover:bg-gray-500  flex items-center text-white rounded-md"
                         >
                             <img className='h-[25px] mr-3 w-[25px]' src='/svg/user.svg' /><span>{session?.user?.name}</span>
                         </button>
@@ -98,7 +98,7 @@ const Header = () => {
                                 <div className="relative inline-block text-left">
                                     <button
                                         onClick={() => setIsOpen(!isOpen)}
-                                        className="px-3 py-2 bg-[#d95245] flex items-center text-white rounded-md"
+                                        className="px-3 py-2 bg-[#d95245]  hover:bg-gray-500 flex items-center text-white rounded-md"
                                     >
                                         <img className='h-[25px] mr-3 w-[25px]' src='/svg/user.svg' />MEnu
                                     </button>

@@ -7,7 +7,7 @@ import '../../CSS/Hero.css'
 export default function Hero() {
     return (
         <div className='bg-[#4A90E2] '>
-            <div className='lg:flex lg:pb-24 md:justify-around py-5 px-5 lg:px-0 '>
+            <div className='lg:flex lg:pb-24 md:justify-around py-5 md:px-5 lg:px-0 '>
                 <div className='w-[100%]  pt-5 content-center pl-10   xl:p-20' >
                     <h1 className='text-3xl text-white font-bold ' >Next-Generation <span className='text-[#FF6F61]'><div className="container1"><div className="text1">Web Application</div></div></span><br /><br />
                         We Value Our Customers' Business and <br />Their Digital Presence.

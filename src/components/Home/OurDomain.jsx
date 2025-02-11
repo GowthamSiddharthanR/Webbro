@@ -7,7 +7,7 @@ export default function OurDomain() {
     <div className='main'>
       <div className='heading2'>Our Domain Expertise</div>
       <h1 className='text-5xl text-center mb-5 mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-      <h2 className='para2'>As domain experts, but also with excellent technological skills,
+      <h2 className='para2  md:px-10'>As domain experts, but also with excellent technological skills,
         We are well suited to transform a complex business problem into a simple solution.</h2>
       <div className='flex flex-wrap justify-evenly justify-center items-center  md:mb-10 gap-5  '>
 

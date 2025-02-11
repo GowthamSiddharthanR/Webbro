@@ -20,7 +20,7 @@ export default function Content() {
                         <div className='w-[100%]'>
                             <div className='prheading'>CMS Software</div>
                             <h1 className='text-4xl text-center  mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-                            <h1 className='text-justify'>CMS programs are used to manage and publish web content. Multiple authors can contribute to the content via a CMS. 
+                            <h1 className='text-justify text-white'>CMS programs are used to manage and publish web content. Multiple authors can contribute to the content via a CMS. 
                                 Using this tool, you can also add, edit, or delete any published content on your website. In addition to managing 
                                 the content of company web pages and websites, CMS is also used to manage marketing campaigns.</h1>
                         </div>
@@ -43,7 +43,7 @@ export default function Content() {
                         <div className='w-[100%]'>
                             <div className='prheading'>CRM Software</div>
                             <h1 className='text-4xl text-center  mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-                            <h1 className='text-justify'>CRM (Customer Relationship Management) entails the analysis of customer data to improve customer relations and 
+                            <h1 className='text-justify text-white'>CRM (Customer Relationship Management) entails the analysis of customer data to improve customer relations and 
                                 personalize future communication. Businesses use CRM to manage their interaction with clients. Using CRM, companies
                                  can build the most effective communication model with clients, leading to a better understanding of customer needs, 
                                  increasing loyalty, and contributing to increased sales.</h1>
@@ -67,7 +67,7 @@ export default function Content() {
                         <div className='w-[100%]'>
                             <div className='prheading'>ERP Software</div>
                             <h1 className='text-4xl text-center  mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-                            <h1 className='text-justify'>The Enterprise Resource Planning (ERP) software is a management solution for improving business operations, 
+                            <h1 className='text-justify text-white'>The Enterprise Resource Planning (ERP) software is a management solution for improving business operations, 
                                 communication, and collaboration. A comprehensive ERP software platform integrates sales, orders, finance, 
                                 human resources, planning, production, inventory, and procurement process.</h1>
                         </div>
@@ -90,7 +90,7 @@ export default function Content() {
                         <div className='w-[100%]'>
                             <div className='prheading'>E-Commerce</div>
                             <h1 className='text-4xl text-center  mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-                            <h1 className='text-justify'>Web-based e-commerce software helps you order and fulfil orders, track inventory,
+                            <h1 className='text-justify text-white'>Web-based e-commerce software helps you order and fulfil orders, track inventory,
                                 and manage product inventory. The software lets you manage a product database, track sales,
                                 market to customers, offer discounts, create a loyalty program, and even connect with customers
                                 through a blog.</h1>
@@ -114,7 +114,7 @@ export default function Content() {
                         <div className='w-[100%]'>
                             <div className='prheading'>GST Billing Software</div>
                             <h1 className='text-4xl text-center  mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-                            <h1 className='text-justify'>The GST billing software allows companies to create invoices, bills, inventory management, account statements, 
+                            <h1 className='text-justify text-white '>The GST billing software allows companies to create invoices, bills, inventory management, account statements, 
                                 balance sheets, GST reports, and other features on a monthly, quarterly, or annual basis.</h1>
                         </div>
 
@@ -136,7 +136,7 @@ export default function Content() {
                         <div className='w-[100%]'>
                             <div className='prheading'>HealthCare</div>
                             <h1 className='text-4xl text-center  mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-                            <h1 className='text-justify'>Both clinics and hospitals use healthcare software for storing patient information in a digital format, 
+                            <h1 className='text-justify text-white'>Both clinics and hospitals use healthcare software for storing patient information in a digital format, 
                                 and this software is sometimes integrated with hospital management software and practice management software. 
                                 It is used by hospitals internally to store their patient's data.</h1>
                         </div>
@@ -159,7 +159,7 @@ export default function Content() {
                         <div className='w-[100%]'>
                             <div className='prheading'>Smarty School</div>
                             <h1 className='text-4xl text-center  mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-                            <h1 className='text-justify'>Smarty School is a school management software application that provides various services to assist schools in
+                            <h1 className='text-justify text-white'>Smarty School is a school management software application that provides various services to assist schools in
                                  their day-to-day administrative and educational activities.Developed on a strong web architecture aligned 
                                  with the demands of the educational field, it is a comprehensive cloud-based system.</h1>
                         </div>
@@ -182,7 +182,7 @@ export default function Content() {
                         <div className='w-[100%]'>
                             <div className='prheading'>Digital Marketing Tool</div>
                             <h1 className='text-4xl text-center  mt-[-20px] text-[#FF6F61] font-black text-stone-100'>&#x291A;&#x2919;</h1>
-                            <h1 className='text-justify'>Companies and marketing professionals use digital marketing tools to create and implement marketing campaigns 
+                            <h1 className='text-justify text-white'>Companies and marketing professionals use digital marketing tools to create and implement marketing campaigns 
                                 that successfully promote their products and services. Through Digital Marketing Tools, we promote brands to
                                  communicate with potential customers using the internet, social media, and other digital resources. We also 
                                  provide digital marketing servicesthat help you advertise or market your business online, such as through search engine
