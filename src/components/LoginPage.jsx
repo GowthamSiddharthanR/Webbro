@@ -36,6 +36,9 @@ export default function LoginPage() {
                 transition={{ duration: 1 }}
                 className="auth-card"
             >
+                <button onClick={()=> signIn("google")} className='googlebtn flex gap-3'><img height={25} width={25} src={"svg/google.svg"}/>Sign in with Google</button>
+                <hr className='m-5'/>
+                
                 <h2>Login</h2>
                 <form onSubmit={handleSubmit}>
                     <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email" required />

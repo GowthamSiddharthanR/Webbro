@@ -1,8 +1,11 @@
 import NextAuth from "next-auth/next";
-import CredentialsProvider from "next-auth/providers/credentials"
+import CredentialsProvider from "next-auth/providers/credentials";
+import GoogleProvider from "next-auth/providers/google";
 import { connectMongoDb } from "../../../../../lib/mongodb";
 import User from "../../../../../models/user";
 import bcrypt from "bcryptjs";
+import { signIn } from "next-auth/react";
+import googleUser from "../../../../../models/googleUser";
 
 export const authOptions = {
     pages: {
@@ -33,13 +36,50 @@ export const authOptions = {
                 }
             },
         }),
+        GoogleProvider({
+            clientId: process.env.GOOGLE_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+        })
     ],
+    callbacks: {
+        async signIn({ user, account }) {
+            console.log(user);
+            console.log(account);
+            if (account.provider === "google") {
+                const { name, email } = user;
+                try {
+                    await connectMongoDb();
+                    const userExists= await googleUser.findOne({email});
+                    if(!userExists){
+                        const res = await fetch("http://localhost:3000/api/googleUser", {
+                            method: "POST",
+                            header: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                                name,
+                                email,
+                            }),
+                        });
+                        if (res.ok) {
+                            return user;
+                        }
+                    }
+                   
+                } catch (error) {
+                    console.log(error)
+                }
+            }
+            return user;
+        }
+
+    },
     session: {
         strategy: "jwt",
     },
     secret: process.env.NEXTAUTH_SECRET,
-    
-   
+
+
 };
 const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };

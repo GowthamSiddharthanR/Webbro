@@ -39,14 +39,15 @@ const Header = () => {
                     <Link href="/services" className="hover:text-gray-400">Services</Link>
                     <Link href="/about" className="hover:text-gray-400">About</Link>
                     <Link href="/contact" className="hover:text-gray-400">Contact</Link>
-
+                    
                     {/* Logout Button */}
-                    <div className="relative inline-block text-left">
+                    <div className="relative items-center inline-block text-left">
+                   
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="px-3 py-2 bg-[#d95245] hover:bg-gray-500  flex items-center text-white rounded-md"
+                            className="px-3 py-2  bg-[#d95145] hover:bg-gray-500  flex gap-2 items-center font-bold text-white rounded-full"
                         >
-                            <img className='h-[25px] mr-3 w-[25px]' src='/svg/user.svg' /><span>{session?.user?.name}</span>
+                            <img className='h-[35px] rounded-full w-[35px]' src={session?.user?.image} /><span>{session?.user?.name}</span>
                         </button>
                         {isOpen && (
                             <motion.div
@@ -100,7 +101,7 @@ const Header = () => {
                                         onClick={() => setIsOpen(!isOpen)}
                                         className="px-3 py-2 bg-[#d95245]  hover:bg-gray-500 flex items-center text-white rounded-md"
                                     >
-                                        <img className='h-[25px] mr-3 w-[25px]' src='/svg/user.svg' />MEnu
+                                        <img className='h-[25px] mr-3 w-[25px]' src='/svg/user.svg' /><span>{session?.user?.name}</span>
                                     </button>
                                     {isOpen && (
                                         <motion.div
