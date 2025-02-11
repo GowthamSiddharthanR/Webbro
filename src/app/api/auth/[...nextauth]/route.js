@@ -51,7 +51,7 @@ export const authOptions = {
                     await connectMongoDb();
                     const userExists= await googleUser.findOne({email});
                     if(!userExists){
-                        const res = await fetch("/api/googleUser", {
+                        const res = await fetch("https://webbro-ruby.vercel.app/api/googleUser", {
                             method: "POST",
                             header: {
                                 "Content-Type": "application/json",
