@@ -1,10 +1,10 @@
+
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
 import { connectMongoDb } from "../../../../../lib/mongodb";
 import User from "../../../../../models/user";
 import bcrypt from "bcryptjs";
-import { signIn } from "next-auth/react";
 import googleUser from "../../../../../models/googleUser";
 
 export const authOptions = {
@@ -43,15 +43,15 @@ export const authOptions = {
     ],
     callbacks: {
         async signIn({ user, account }) {
-            console.log(user);
-            console.log(account);
+            
             if (account.provider === "google") {
                 const { name, email } = user;
                 try {
                     await connectMongoDb();
                     const userExists= await googleUser.findOne({email});
                     if(!userExists){
-                        const res = await fetch("https://webbro-ruby.vercel.app/api/googleUser", {
+                        const baseUrl=process.env.BASE_URL;
+                        const res = await fetch(`${baseUrl}/api/googleUser`, {
                             method: "POST",
                             header: {
                                 "Content-Type": "application/json",
