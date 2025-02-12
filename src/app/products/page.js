@@ -5,6 +5,7 @@ import Content from '@/components/Products/Content'
 import Hero from '@/components/Products/Hero'
 import React from 'react'
 import { useEffect } from "react";
+import ScrollToTop from "@/components/scrollToTop";
 
 export default function page() {
   useEffect(()=>{
@@ -20,6 +21,7 @@ export default function page() {
     <div>
         <Hero/>
         <Content/>
+        <ScrollToTop/>
     </div>
   )
 }

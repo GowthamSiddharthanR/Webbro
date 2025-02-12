@@ -3,6 +3,7 @@ import SContent from '@/components/Services/SContent'
 import SHero from '@/components/Services/SHero'
 import { useEffect } from "react";
 import Lenis from "lenis";
+import ScrollToTop from '@/components/scrollToTop';
 
 
 export default function page() {
@@ -19,6 +20,7 @@ export default function page() {
     <>
     <SHero/>
     <SContent/>
+    <ScrollToTop/>
     </>
   )
 }

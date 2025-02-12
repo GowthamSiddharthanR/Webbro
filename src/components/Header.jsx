@@ -34,11 +34,11 @@ const Header = () => {
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-6">
 
-                    <Link href="/home" className="hover:animate-bounce hover:text-gray-900">Home</Link>
-                    <Link href="/products" className="hover:text-gray-900 hover:animate-bounce">Products</Link>
-                    <Link href="/services" className="hover:text-gray-900 hover:animate-bounce">Services</Link>
-                    <Link href="/about" className="hover:text-gray-900 hover:animate-bounce">About</Link>
-                    <Link href="/contact" className="hover:text-gray-900 hover:animate-bounce">Contact</Link>
+                    <Link href="/home" className=" hover:text-gray-900">Home</Link>
+                    <Link href="/products" className="hover:text-gray-900 ">Products</Link>
+                    <Link href="/services" className="hover:text-gray-900 ">Services</Link>
+                    <Link href="/about" className="hover:text-gray-900">About</Link>
+                    <Link href="/contact" className="hover:text-gray-900">Contact</Link>
                     
                     {/* Logout Button */}
                     <div className="relative items-center inline-block text-left">

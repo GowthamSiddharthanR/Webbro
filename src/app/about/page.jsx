@@ -4,6 +4,7 @@ import WhyUs from '@/components/About/WhyUs'
 import React from 'react'
 import Lenis from "lenis";
 import { useEffect } from "react";
+import ScrollToTop from '@/components/scrollToTop';
 
 
 export default function page() {
@@ -20,6 +21,7 @@ export default function page() {
     <>
     <Hero/>
     <WhyUs/>
+    <ScrollToTop/>
     </>
   )
 }

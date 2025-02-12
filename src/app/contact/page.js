@@ -3,6 +3,7 @@ import Contact from '@/components/Contact/Contact'
 import React from 'react'
 import { useEffect } from "react";
 import Lenis from "lenis";
+import ScrollToTop from '@/components/scrollToTop';
 
 
 export default function page() {
@@ -18,6 +19,7 @@ export default function page() {
     return (
         <>
             <Contact />
+            <ScrollToTop/>
         </>
     )
 }
