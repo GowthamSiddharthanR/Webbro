@@ -1,6 +1,8 @@
 import React from 'react'
 import "../CSS/Footer.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFire } from "@fortawesome/free-solid-svg-icons";
+
 import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 export default function Footer1() {
@@ -53,7 +55,9 @@ export default function Footer1() {
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; 2025 WEBBRO. All Rights Reserved.</p>
+                <div>&copy; 2025 WEBBRO. All Rights Reserved.<span className=' text-sm'>  @powered by Spartans <FontAwesomeIcon icon={faFire} className="text-red-500 text-xl" /></span>
+                </div>
+
             </div>
         </footer>
     )
