@@ -13,7 +13,7 @@ export default function Start() {
 
     return (
         <div className='start text-[white] justify-items-center content-center'>
-            <h1 className='text-4xl lg:text-7xl font-[poppins] font-bold starthead'>Welcome to
+            <h1 className='text-4xl lg:text-7xl font-[poppins] font-bold starthead animate-bounce'>Welcome to
                 <span className='text-[#FF6F61] startsub font-[poppins]'> W</span>
                 EB<span className='text-[#FF6F61] startsub font-[poppins]'>B</span>RO</h1>
             <h1 className=' text-lg lg:text-2xl startsub1 font-medium'>"Transforming Ideas into Reality </h1>
@@ -22,7 +22,7 @@ export default function Start() {
                 className={`scale ${"ctaButton"} ${isShaking ? "shake" : ''}`}
                 onClick={handleButtonClick}
             >
-                <span>Lets get started.</span>
+                <span className='animate-pulse'>Lets get started.</span>
             </button></Link>
 
         </div>

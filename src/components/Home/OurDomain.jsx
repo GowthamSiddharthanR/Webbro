@@ -19,7 +19,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/crm.svg' />
           </div>
 
@@ -38,7 +38,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/calculator.svg' />
           </div>
 
@@ -57,7 +57,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/pair.svg' />
           </div>
           <a href="#" className="card2 card2:hover">
@@ -75,7 +75,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/cart.svg' />
           </div>
           <a href="#" className="card2 card2:hover">
@@ -93,7 +93,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/money.svg' />
           </div>
 
@@ -112,7 +112,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/heart.svg' />
           </div>
 
@@ -131,7 +131,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/school.svg' />
           </div>
 
@@ -151,7 +151,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/bank.svg' />
           </div>
 
@@ -170,7 +170,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/book.svg' />
           </div>
 
@@ -190,7 +190,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/camera.svg' />
           </div>
 
@@ -209,7 +209,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/bill.svg' />
           </div>
 
@@ -228,7 +228,7 @@ export default function OurDomain() {
             ease: "easeInOut", // Easing function
           }}
         >
-          <div className="absolute1">
+          <div className="absolute1 animate-bounce">
             <img src='/svg/pig.svg' />
           </div>
 
