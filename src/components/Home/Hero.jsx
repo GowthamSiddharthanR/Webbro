@@ -18,9 +18,9 @@ export default function Hero() {
                         initial={{ scale: 0 }} // Start at size zero
                         animate={{ scale: 1 }} // Transition to full size
                         transition={{
-                            stiffness: 80,
+                            stiffness: 60,
                             type: "spring",
-                            damping: 5,
+                            damping: 8,
                             duration: 1, // Animation duration
                             ease: "easeInOut", // Easing function
                         }}

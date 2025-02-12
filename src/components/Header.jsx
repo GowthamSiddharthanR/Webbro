@@ -45,10 +45,10 @@ const Header = () => {
                    
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="px-3 py-2  bg-[#d95145] hover:bg-gray-500  flex gap-2 items-center font-bold text-white rounded-full"
+                            className="p-1 bg-[#e3e3e3c3] hover:bg-[#000000ac]  flex gap-2 items-center font-bold text-white rounded-full"
                         >
                           
-                            <img className='h-[35px] rounded-full w-[35px]' src={session?.user?.image||"svg/user.svg"} /><span>{session?.user?.name}</span>
+                            <img className='h-[30px] rounded-full w-[30px]' src={session?.user?.image||"svg/user.svg"} /><span className='text-[#000000a1]  hover:text-[#ffffff]'>{session?.user?.name}</span>
                         </button>
                         {isOpen && (
                             <motion.div
