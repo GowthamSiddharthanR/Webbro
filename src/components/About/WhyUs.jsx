@@ -15,30 +15,30 @@ export default function WhyUs() {
                     ease: "easeInOut", // Easing function
                 }}
             ><div className='flex flex-wrap justify-evenly justify-center items-center gap-5'>
-                    <a href="#" className=" abcard ">
-                        <img className="abimg1 " src='/svg/quality.svg' />
+                    <div href="#" className=" abcard ">
+                        <img className="animate-bounce abimg1 " src='/svg/quality.svg' />
                         <h5 className="abcardHead">Quality</h5>
                         <p className="abcardContent">Our success has been based on the necessity of quality
                             We never compromise on the quality we work on during the last 7 years and so on.</p>
-                    </a>
-                    <a href="#" className=" abcard ">
-                        <img className="abimg " src='/svg/service.svg' />
+                    </div>
+                    <div href="#" className=" abcard ">
+                        <img className="animate-bounce abimg " src='/svg/service.svg' />
                         <h5 className="abcardHead">Service</h5>
                         <p className="abcardContent">We put great importance on the requirements of our clients and their investments in technology
                             and we are committed to providing the best possible outcomes.</p>
-                    </a>
-                    <a href="#" className=" abcard">
-                        <img className="abimg " src='/svg/support.svg' />
+                    </div>
+                    <div href="#" className=" abcard">
+                        <img className="animate-bounce abimg " src='/svg/support.svg' />
                         <h5 className="abcardHead">Support</h5>
                         <p className="abcardContent">Our experienced professionals with defined processes and protocols enable
                             us to provide expedited business support, consequently, at all levels.</p>
-                    </a>
-                    <a href="#" className=" abcard ">
-                        <img className="abimg1 " src='/svg/trust.svg' />
+                    </div>
+                    <div href="#" className=" abcard ">
+                        <img className="animate-bounce abimg1 " src='/svg/trust.svg' />
                         <h5 className="abcardHead">Trust</h5>
                         <p className="abcardContent">We have achieved what we are today primarily because of our faith in our
                             value system and mission to empower our clients with the right solutions.</p>
-                    </a>
+                    </div>
 
                 </div></motion.div>
         </div>

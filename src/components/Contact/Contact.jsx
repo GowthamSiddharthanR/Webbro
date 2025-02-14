@@ -117,17 +117,17 @@ export default function Contact() {
                     }}
                 ><div className='flex flex-wrap justify-evenly justify-center items-center gap-5'>
                         <a href="#" className=" cocard ">
-                            <img className="coimg " src='/svg/call.svg' />
+                            <img className="coimg animate-bounce " src='/svg/call.svg' />
                             <h5 className="cocardHead">Call</h5>
                             <div className="cocardContent"><p>+91-9876543210</p><p>+91-9876543210</p></div>
                         </a>
                         <a href="#" className=" cocard ">
-                            <img className="coimg1 " src='/svg/mail.svg' />
+                            <img className="coimg1 animate-bounce" src='/svg/mail.svg' />
                             <h5 className="cocardHead">Mail</h5>
                             <div className="cocardContent"><p>contact@webbro.com</p><p>info@webbro.com</p></div>
                         </a>
                         <a href="#" className=" cocard">
-                            <img className="coimg " src='/svg/location.svg' />
+                            <img className="coimg animate-bounce" src='/svg/location.svg' />
                             <h5 className="cocardHead">Location</h5>
                             <div className="cocardContent">
                                 <p>WEBBRO Softwares</p>
