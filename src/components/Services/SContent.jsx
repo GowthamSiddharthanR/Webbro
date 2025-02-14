@@ -2,6 +2,7 @@
 import React from 'react'
 import "../../CSS/Services/content.css"
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 
 export default function SContent() {
@@ -18,7 +19,7 @@ export default function SContent() {
                                     duration: 0.5, // Animation duration
                                     ease: "easeInOut", // Easing function
                                 }}
-                            ><div className='scard'>
+                            ><Link href={"/services/webDesign"} className='scard cursor-pointer'>
                                     <h1 className='scardHead font-poppins'>Web Design</h1>
                                     <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                     <p className='slcardContent'>Web design is the design and creation of internet sites. This includes a selection of separate skills that
@@ -26,7 +27,7 @@ export default function SContent() {
                                         interface, site structure, navigation, layout, colors, fonts, and overall imagery.
 
                                     </p>
-                                </div></motion.div>
+                                </Link></motion.div>
                             <div className="slabsolute">
                                 <motion.div
                                     initial={{ scale: 0 }} // Start at size zero
@@ -51,7 +52,7 @@ export default function SContent() {
                                     duration: 0.5, // Animation duration
                                     ease: "easeInOut", // Easing function
                                 }}
-                            ><div className='scard'>
+                            ><Link href={"/services/webApplication"} className='scard cursor-pointer'>
                                     <h1 className='scardHead font-poppins'>Web Application</h1>
                                     <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                     <p className='srcardContent'>
@@ -60,7 +61,7 @@ export default function SContent() {
                                         from numerous connected computers. Web applications can be run through client programs so that you can
                                         access and enter data.
                                     </p>
-                                </div></motion.div>
+                                </Link></motion.div>
                             <div className="srabsolute">
                                 <motion.div
                                     initial={{ scale: 0 }} // Start at size zero
@@ -96,7 +97,7 @@ export default function SContent() {
                                 duration: 0.5, // Animation duration
                                 ease: "easeInOut", // Easing function
                             }}
-                        ><div className='bg-[#4A90E2]'>
+                        ><Link href={"/services/webDesign"}> <div className='bg-[#4A90E2] cursor-pointer'>
                                 <h1 className='scardHead font-poppins'>Web Design</h1>
                                 <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                 <p className='slcardContent'>Web design is the design and creation of internet sites. This includes a selection of separate skills that
@@ -104,7 +105,7 @@ export default function SContent() {
                                     interface, site structure, navigation, layout, colors, fonts, and overall imagery.
 
                                 </p>
-                            </div></motion.div>
+                            </div></Link></motion.div>
 
                     </div>
                     <div className='md:hidden bg-[white] p-10'>
@@ -126,7 +127,7 @@ export default function SContent() {
                                 duration: 0.5, // Animation duration
                                 ease: "easeInOut", // Easing function
                             }}
-                        ><div className='bg-[#4A90E2]'>
+                        ><Link href={"/services/webApplication"}> <div className='bg-[#4A90E2] cursor-pointer'>
                             <h1 className='scardHead font-poppins'>Web Application</h1>
                             <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                             <p className='slcardContent'>An application that uses web-based technology to perform specific tasks is called a website
@@ -135,7 +136,7 @@ export default function SContent() {
                                 access and enter data.
 
                             </p>
-                        </div></motion.div>
+                        </div></Link></motion.div>
 
                     </div>
                 </div>
@@ -151,14 +152,14 @@ export default function SContent() {
                                     duration: 0.5, // Animation duration
                                     ease: "easeInOut", // Easing function
                                 }}
-                            ><div className='scard'>
+                            ><Link href={"/services/mobileApplication"} className='scard cursor-pointer'>
                                     <h1 className='scardHead font-poppins'>Mobile Application</h1>
                                     <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                     <p className='slcardContent'>Mobile application development is the process of creating software for
                                         smartphones and digital assistants, most ordinarily for Android and iOS. The software is often
                                         preinstalled on the device, downloaded from a mobile app store, or accessed through a mobile browser.
                                     </p>
-                                </div></motion.div>
+                                </Link></motion.div>
                             <div className="slabsolute">
                                 <motion.div
                                     initial={{ scale: 0 }} // Start at size zero
@@ -183,7 +184,7 @@ export default function SContent() {
                                     duration: 0.5, // Animation duration
                                     ease: "easeInOut", // Easing function
                                 }}
-                            ><div className='scard'>
+                            ><Link href={"/services/digitalMarketing"} className='scard cursor-pointer'>
                                     <h1 className='scardHead font-poppins'>Digital Marketing</h1>
                                     <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                     <p className='srcardContent'>
@@ -191,7 +192,7 @@ export default function SContent() {
                                         customers using the web and other sorts of data communication. This includes not only email, social
                                         media, and web-based advertising, but also text and multimedia messages as a marketing channel.
                                     </p>
-                                </div></motion.div>
+                                </Link></motion.div>
                             <div className="srabsolute">
                                 <motion.div
                                     initial={{ scale: 0 }} // Start at size zero
@@ -227,7 +228,7 @@ export default function SContent() {
                                 duration: 0.5, // Animation duration
                                 ease: "easeInOut", // Easing function
                             }}
-                        ><div className='bg-[#4A90E2]'>
+                        ><Link href={"/services/mobileApplication"}> <div className='bg-[#4A90E2] cursor-pointer'>
                             <h1 className='scardHead font-poppins'>Mobile Application</h1>
                             <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                             <p className='slcardContent'>Mobile application development is the process of creating software for
@@ -235,7 +236,7 @@ export default function SContent() {
                                 preinstalled on the device, downloaded from a mobile app store, or accessed through a mobile browser.
 
                             </p>
-                        </div></motion.div>
+                       </div> </Link></motion.div>
 
                     </div>
                     <div className='md:hidden bg-[white] p-10'>
@@ -257,14 +258,14 @@ export default function SContent() {
                                 duration: 0.5, // Animation duration
                                 ease: "easeInOut", // Easing function
                             }}
-                        ><div className='bg-[#4A90E2]'>
+                        ><Link href={"/services/digitalMarketing"}> <div className='bg-[#4A90E2] cursor-pointer'>
                             <h1 className='scardHead font-poppins'>Digital Marketing</h1>
                             <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                             <p className='slcardContent'>Digital marketing, also called online marketing, is the promotion of brands to connect with potential
                                 customers using the web and other sorts of data communication. This includes not only email, social
                                 media, and web-based advertising, but also text and multimedia messages as a marketing channel.
                             </p>
-                        </div></motion.div>
+                        </div></Link></motion.div>
 
                     </div>
                 </div>
@@ -280,14 +281,14 @@ export default function SContent() {
                                     duration: 0.5, // Animation duration
                                     ease: "easeInOut", // Easing function
                                 }}
-                            ><div className='scard'>
+                            ><Link href={"/services/customisedSoftware"} className='scard cursor-pointer'>
                                     <h1 className='scardHead font-poppins'>Customized Software</h1>
                                     <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                     <p className='slcardContent'>Customized services are instrumental in attracting guests and establishing
                                         a long-term relationship with them, for they need a positive effect on the guests level of
                                         satisfaction and the degree of comfort experienced during their stay.
                                     </p>
-                                </div></motion.div>
+                                </Link></motion.div>
                             <div className="slabsolute">
                                 <motion.div
                                     initial={{ scale: 0 }} // Start at size zero
@@ -312,7 +313,7 @@ export default function SContent() {
                                     duration: 0.5, // Animation duration
                                     ease: "easeInOut", // Easing function
                                 }}
-                            ><div className='scard'>
+                            ><Link href={"/services/cloudHosting"} className='scard cursor-pointer'>
                                     <h1 className='scardHead font-poppins'>Cloud Computing</h1>
                                     <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                     <p className='srcardContent'>
@@ -321,7 +322,7 @@ export default function SContent() {
                                         scalable, reliable, and versatile kind of hosting, perfect for sites that have hikes and dips in things
                                         like traffic.
                                     </p>
-                                </div></motion.div>
+                                </Link></motion.div>
                             <div className="srabsolute">
                                 <motion.div
                                     initial={{ scale: 0 }} // Start at size zero
@@ -357,7 +358,7 @@ export default function SContent() {
                                 duration: 0.5, // Animation duration
                                 ease: "easeInOut", // Easing function
                             }}
-                        ><div className='bg-[#4A90E2]'>
+                        ><Link href={"/services/customisedSoftware"}> <div className='bg-[#4A90E2] cursor-pointer'>
                             <h1 className='scardHead font-poppins'>Customized Software</h1>
                             <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                             <p className='slcardContent'>Customized services are instrumental in attracting guests and establishing
@@ -365,7 +366,7 @@ export default function SContent() {
                                 and the degree of comfort experienced during their stay.
 
                             </p>
-                        </div></motion.div>
+                       </div> </Link></motion.div>
 
                     </div>
                     <div className='md:hidden bg-[white] p-10'>
@@ -387,7 +388,7 @@ export default function SContent() {
                                 duration: 0.5, // Animation duration
                                 ease: "easeInOut", // Easing function
                             }}
-                        ><div className='bg-[#4A90E2]'>
+                        ><Link href={"/services/cloudHosting"}> <div className='bg-[#4A90E2] cursor-pointer'>
                             <h1 className='scardHead font-poppins'>Cloud Computing</h1>
                             <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                             <p className='slcardContent'>Cloud hosting is where your site is stored on multiple servers,
@@ -395,7 +396,7 @@ export default function SContent() {
                                 scalable, reliable, and versatile kind of hosting, perfect for sites that have hikes and dips in things
                                 like traffic.
                             </p>
-                        </div></motion.div>
+                       </div> </Link></motion.div>
 
                     </div>
                 </div>
@@ -411,7 +412,7 @@ export default function SContent() {
                                     duration: 0.5, // Animation duration
                                     ease: "easeInOut", // Easing function
                                 }}
-                            ><div className='scard'>
+                            ><Link href={"/services/softwareTesting"} className='scard cursor-pointer'>
                                     <h1 className='scardHead font-poppins'>Software Testing</h1>
                                     <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                     <p className='slcardContent'>Software Testing includes activities that ensure the identification of bugs,
@@ -419,7 +420,7 @@ export default function SContent() {
                                         system or component. Testing is executing a system to find out gaps, errors, or any type of missing
                                         requirements.
                                     </p>
-                                </div></motion.div>
+                                </Link></motion.div>
                             <div className="slabsolute">
                                 <motion.div
                                     initial={{ scale: 0 }} // Start at size zero
@@ -444,14 +445,14 @@ export default function SContent() {
                                     duration: 0.5, // Animation duration
                                     ease: "easeInOut", // Easing function
                                 }}
-                            ><div className='scard'>
+                            ><Link href={"/services/serverMaintenance"} className='scard cursor-pointer'>
                                     <h1 className='scardHead font-poppins'>Server Maintanance</h1>
                                     <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                                     <p className='srcardContent'>Server maintenance is the process of keeping the server updated and dealing
                                         in tip-top shape. Because servers check out all of your data, it is vital to watch and properly take
                                         care of them so that you simply dont lose valuable information just in case of an error.
                                     </p>
-                                </div></motion.div>
+                                </Link></motion.div>
                             <div className="srabsolute">
                                 <motion.div
                                     initial={{ scale: 0 }} // Start at size zero
@@ -487,7 +488,7 @@ export default function SContent() {
                                 duration: 0.5, // Animation duration
                                 ease: "easeInOut", // Easing function
                             }}
-                        ><div className='bg-[#4A90E2]'>
+                        ><Link href={"/services/softwareTesting"}> <div className='bg-[#4A90E2] cursor-pointer'>
                             <h1 className='scardHead font-poppins'>Software Testing</h1>
                             <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                             <p className='slcardContent'>Software Testing includes activities that ensure the identification of bugs,
@@ -495,7 +496,7 @@ export default function SContent() {
                                 system or component. Testing is executing a system to find out gaps, errors, or any type of missing
                                 requirements.
                             </p>
-                        </div></motion.div>
+                        </div></Link></motion.div>
 
                     </div>
                     <div className='md:hidden bg-[white] p-10'>
@@ -517,14 +518,14 @@ export default function SContent() {
                                 duration: 0.5, // Animation duration
                                 ease: "easeInOut", // Easing function
                             }}
-                        ><div className='bg-[#4A90E2]'>
+                        ><Link href={"/services/serverMaintenance"}> <div className='bg-[#4A90E2] cursor-pointer'>
                             <h1 className='scardHead font-poppins'>Server Maintanance</h1>
                             <h1 className='text-5xl text-center mt-[-20px] text-[white] font-black '>&#x291A;&#x2919;</h1>
                             <p className='slcardContent'>Server maintenance is the process of keeping the server updated and dealing
                                 in tip-top shape. Because servers check out all of your data, it is vital to watch and properly take
                                 care of them so that you simply dont lose valuable information just in case of an error.
                             </p>
-                        </div></motion.div>
+                        </div></Link></motion.div>
 
                     </div>
                 </div>

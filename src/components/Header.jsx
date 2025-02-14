@@ -100,16 +100,16 @@ const Header = () => {
                                 <div className="relative inline-block text-left">
                                     <button
                                         onClick={() => setIsOpen(!isOpen)}
-                                        className="px-3 py-2 bg-[#d95245]  hover:bg-gray-500 flex items-center text-white rounded-md"
+                                        className="px-3 py-2 bg-[#d95245]  hover:bg-gray-500 flex items-center gap-2  text-white rounded-full"
                                     >
-                                        <img className='h-[25px] mr-3 w-[25px]' src='/svg/user.svg' /><span>{session?.user?.name}</span>
+                                        <img className='h-[30px] rounded-full w-[30px]' src={session?.user?.image||"/svg/user.svg"} /><span>{session?.user?.name}</span>
                                     </button>
                                     {isOpen && (
                                         <motion.div
                                             initial={{ opacity: 0, y: -10 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 0, y: -10 }}
-                                            className="absolute bottom-[-10px] left-28 mt-1 w-32 text-white rounded-md shadow-xl"
+                                            className="absolute left-14 mt-1 w-32 text-white rounded-md shadow-xl"
                                         >
                                             <ul className="py-2">
                                                 <li className="px-4 py-2  cursor-pointer"> <button
