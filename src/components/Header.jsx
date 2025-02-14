@@ -48,7 +48,7 @@ const Header = () => {
                             className="py-1 pl-1  pr-4 hover:bg-[#e3e3e3ed] hover:text-[#302f2f] text-[#ffffffe1] bg-[#000000ac]  flex gap-2 items-center font-bold rounded-full"
                         >
                           
-                            <img className='h-[30px] rounded-full w-[30px]' src={session?.user?.image||"svg/user.svg"} /><span>{session?.user?.name}</span>
+                            <img className='h-[30px] rounded-full w-[30px]' src={session?.user?.image||"/svg/user.svg"} /><span>{session?.user?.name}</span>
                         </button>
                         {isOpen && (
                             <motion.div

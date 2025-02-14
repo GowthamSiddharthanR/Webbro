@@ -2,6 +2,7 @@
 import React from 'react'
 import '../../CSS/Home/OurService.css'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 export default function OurService() {
   return (
     <div className='bg-[#F4F4F4] md:p-5'>
@@ -20,11 +21,11 @@ export default function OurService() {
           }}
         >
 
-          <a href="#" className="card card:hover">
+          <Link href="/services/webDesign" className="card card:hover">
 
             <h5 className="cardHead">Web Design</h5>
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </a>
+          </Link>
 
         </motion.div>
         <motion.div
@@ -36,11 +37,11 @@ export default function OurService() {
           }}
         >
 
-          <a href="#" className="card card:hover">
+          <Link href="/services/webApplication" className="card card:hover">
 
             <h5 className="cardHead">Web Application</h5>
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </a>
+          </Link>
 
         </motion.div>
         <motion.div
@@ -52,11 +53,11 @@ export default function OurService() {
           }}
         >
 
-          <a href="#" className="card card:hover">
+          <Link href="/services/digitalMarketing" className="card card:hover">
 
             <h5 className="cardHead"> Digital Marketing</h5>
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </a>
+          </Link>
 
         </motion.div>
         <motion.div
@@ -68,11 +69,11 @@ export default function OurService() {
           }}
         >
 
-          <a href="#" className="card card:hover">
+          <Link href="/services/customisedSoftware" className="card card:hover">
 
             <h5 className="cardHead">Customised Software</h5>
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </a>
+          </Link>
 
         </motion.div>
         <motion.div
@@ -84,11 +85,11 @@ export default function OurService() {
           }}
         >
 
-          <a href="#" className="card card:hover">
+          <Link href="/services/mobileApplication" className="card card:hover">
 
             <h5 className="cardHead">Mobile Application</h5>
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </a>
+          </Link>
 
         </motion.div>
         <motion.div
@@ -100,11 +101,11 @@ export default function OurService() {
           }}
         >
 
-          <a href="#" className="card card:hover">
+          <Link href="/services/cloudHosting" className="card card:hover">
 
             <h5 className="cardHead">Cloud Hosting</h5>
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </a>
+          </Link>
 
         </motion.div>
         <motion.div
@@ -116,11 +117,11 @@ export default function OurService() {
           }}
         >
 
-          <a href="#" className="card card:hover">
+          <Link href="/services/serverMaintenance" className="card card:hover">
 
             <h5 className="cardHead">Server Maintenance</h5>
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </a>
+          </Link>
 
         </motion.div>
         <motion.div
@@ -132,11 +133,11 @@ export default function OurService() {
           }}
         >
 
-          <a href="#" className="card card:hover">
+          <Link href="/services/softwareTesting" className="card card:hover">
 
             <h5 className="cardHead">Software Testing</h5>
             <p className="cardContent">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </a>
+          </Link>
 
         </motion.div>
       </div>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function SContent() {
     return (
-        <div>
+        <div className="bg-[url('/Images/cardpagebg.png')]">
             <div>
                 <div >
                     <div className=' hidden md:flex'>

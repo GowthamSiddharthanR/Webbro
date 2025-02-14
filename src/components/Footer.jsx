@@ -10,8 +10,9 @@ export default function Footer1() {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-section">
-                    <img className="h-[70%] w-[80%] ml-8" alt="Logo Icon" title="Logo Icon" src="Images/logoupdate.png" />
-                    <h1 className='text-2xl tracking-[1px] font-bold text-center font-poppins animate-bounce'><span className='text-[#d95245]'>W</span>EB<span className='text-[#d95245]'>B</span>RO</h1>
+                    <img className="h-[70%] w-[80%] ml-8" alt="Logo Icon" title="Logo Icon" src="/Images/logoupdate.png" />
+                    <h1 className='text-2xl tracking-[1px] font-bold text-center font-poppins animate-bounce'><span 
+                    className='text-[#d95245]'>W</span>EB<span className='text-[#d95245]'>B</span>RO</h1>
 
                     {/* <a href="/about">Learn More</a> */}
                 </div>
@@ -55,7 +56,8 @@ export default function Footer1() {
             </div>
 
             <div className="footer-bottom">
-                <div>&copy; 2025 WEBBRO. All Rights Reserved.<span className=' text-sm'>  @powered by Spartans <FontAwesomeIcon icon={faFire} className="text-red-500 text-xl" /></span>
+                <div>&copy; 2025 WEBBRO. All Rights Reserved.<span className=' text-sm'>  @powered by Spartans 
+                    <FontAwesomeIcon icon={faFire} className="text-red-500 text-xl" /></span>
                 </div>
 
             </div>
