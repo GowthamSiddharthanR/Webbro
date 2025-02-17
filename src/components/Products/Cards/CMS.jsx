@@ -1,13 +1,14 @@
 import LeftToRightAnimation from '@/components/LeftToRightAnimation'
 import RightToLeftAnimation from '@/components/RightToLeftAnimation'
+import ScaleAnimation from '@/components/ScaleAnimation'
 import React from 'react'
 
 export default function CMS() {
     return (
         <div className="bg-[url('/Images/cardpagebg.png')] mt-5 bg-cover">
-            <div className='aspect-[18/10] lg:aspect-[18/7] '>
+            <ScaleAnimation className='aspect-[18/10] lg:aspect-[18/7] '>
                 <img className=' h-[100%] w-[100%] object-contain' src='/Images/cmsi.png' />
-            </div>
+            </ScaleAnimation>
             <div className='justify-items-center mt-5 lg:mt-10'>
                 <div className="lg:flex md:px-10 p-4 bg-[url('/Images/cardpagebg.png')] shadow-2xl shadow-gray-800 mb-10 w-[90%] bg-cover">
                     <LeftToRightAnimation className='lg:w-[40%] my-4 '>
