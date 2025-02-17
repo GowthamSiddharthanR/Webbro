@@ -1,3 +1,5 @@
+import LeftToRightAnimation from '@/components/LeftToRightAnimation'
+import RightToLeftAnimation from '@/components/RightToLeftAnimation'
 import React from 'react'
 
 export default function CMS() {
@@ -8,10 +10,10 @@ export default function CMS() {
             </div>
             <div className='justify-items-center mt-5 lg:mt-10'>
                 <div className="lg:flex md:px-10 p-4 bg-[url('/Images/cardpagebg.png')] shadow-2xl shadow-gray-800 mb-10 w-[90%] bg-cover">
-                    <div className='lg:w-[40%] my-4 '>
+                    <LeftToRightAnimation className='lg:w-[40%] my-4 '>
                         <img className=" w-[100%]" alt='image' src="/svg/cmsp.svg" />
-                    </div>
-                    <div className='lg:w-[60%] my-4 md:px-5'>
+                    </LeftToRightAnimation>
+                    <RightToLeftAnimation className='lg:w-[60%] my-4 md:px-5'>
                         <h1 className="font-bold text-xl">CMS programs are used to manage and publish web content. Multiple authors
                              can contribute to the content via a CMS.</h1>
                         <ul className='m-5 list-disc list-inside'>
@@ -27,7 +29,7 @@ export default function CMS() {
                         </ul>
                         <p>A CMS system offers simplicity, flexibility, scalability, and an affordable solution. It helps generate 
                             revenue and traffic to your site by allowing you to easily create content for your website.</p>
-                    </div>
+                    </RightToLeftAnimation>
                 </div>
             </div>
         </div>

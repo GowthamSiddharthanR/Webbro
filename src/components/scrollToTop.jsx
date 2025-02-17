@@ -1,7 +1,6 @@
-"use client"; // If using Next.js App Router
-
+"use client";
 import { useState, useEffect } from "react";
-import { FaArrowUp } from "react-icons/fa"; // Install react-icons if needed
+import { FaArrowUp } from "react-icons/fa"; 
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);

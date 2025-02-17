@@ -1,3 +1,5 @@
+import LeftToRightAnimation from '@/components/LeftToRightAnimation'
+import RightToLeftAnimation from '@/components/RightToLeftAnimation'
 import React from 'react'
 
 export default function CRM() {
@@ -8,10 +10,10 @@ export default function CRM() {
             </div>
             <div className='justify-items-center mt-5 lg:mt-10'>
                 <div className="lg:flex md:px-10 p-4 bg-[url('/Images/cardpagebg.png')] shadow-2xl shadow-gray-800 mb-10 w-[90%] bg-cover">
-                    <div className='lg:w-[40%] my-4 '>
+                   <LeftToRightAnimation className='lg:w-[40%] my-4 '>
                         <img className=" w-[100%]" alt='image' src="/svg/crmp.svg" />
-                    </div>
-                    <div className='lg:w-[60%] my-4 md:px-5'>
+                    </LeftToRightAnimation>
+                    <RightToLeftAnimation className='lg:w-[60%] my-4 md:px-5'>
                         <h1 className="font-bold text-xl">CRM (Customer Relationship Management) entails the analysis of customer data to improve customer relations and personalize future communication.</h1>
                         <ul className='m-5 list-disc list-inside'>
                             <li>CRM software helps you give customers a unique and seamless experience while building stronger relationships by keeping a record of all customer interactions, tracking sales, and organizing and prioritizing tasks</li>
@@ -19,7 +21,7 @@ export default function CRM() {
                             <li> With this level of functionality compared to old analog and legacy systems, you have something that has the potential to transform how businesses interact with customers. It is impossible to define CRM software without considering SaaS and cloud computing, both of which work together to ensure CRM platforms are always available wherever a user has access to the internet.</li>
                         </ul>
                         <p>The cloud-based CRM software can grow and scale with your business as this technology develops, so any business, no matter what its size, can reap the benefits of CRM-based software.</p>
-                    </div>
+                    </RightToLeftAnimation>
                 </div>
             </div>
         </div>
