@@ -26,7 +26,7 @@ export const authOptions = {
                     }
 
                     if (!user.verified) {
-                        throw new Error("Please verify your email before logging in.");
+                        throw new Error("Please Open your mail and verify your email before logging in.");
                     }
 
                     const passwordCompare = await bcrypt.compare(password, user.password);
