@@ -22,7 +22,8 @@ export async function GET(req) {
         user.verificationToken = undefined;
         await user.save();
 
-        return NextResponse.json({ message: "Email verified successfully, you can login with your email and password" }, { status: 200 });
+        // Redirect to login page
+        return NextResponse.redirect(new URL('/login', req.url));
 
     } catch (error) {
         console.error("Verification error:", error);
