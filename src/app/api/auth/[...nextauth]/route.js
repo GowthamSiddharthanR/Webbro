@@ -1,4 +1,3 @@
-
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
@@ -23,63 +22,72 @@ export const authOptions = {
                     await connectMongoDb();
                     const user = await User.findOne({ email });
                     if (!user) {
-                        return null;
+                        throw new Error("Invalid credentials");
                     }
+
+                    if (!user.verified) {
+                        throw new Error("Please verify your email before logging in.");
+                    }
+
                     const passwordCompare = await bcrypt.compare(password, user.password);
                     if (!passwordCompare) {
-                        return null;
+                        throw new Error("Invalid credentials");
                     }
+
                     return user;
                 } catch (error) {
-                    console.log("Error:", error)
-                    return null;
+                    console.log("Error:", error.message);
+                    throw new Error(error.message); // Send error message to the frontend
                 }
             },
         }),
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        })
+        }),
     ],
+
     callbacks: {
         async signIn({ user, account }) {
-            
             if (account.provider === "google") {
                 const { name, email } = user;
                 try {
                     await connectMongoDb();
-                    const userExists= await googleUser.findOne({email});
-                    if(!userExists){
-                        const baseUrl=process.env.BASE_URL;
+                    const userExists = await googleUser.findOne({ email });
+                    if (!userExists) {
+                        const baseUrl = process.env.BASE_URL;
                         const res = await fetch(`${baseUrl}/api/googleUser`, {
                             method: "POST",
-                            header: {
+                            headers: {
                                 "Content-Type": "application/json",
                             },
-                            body: JSON.stringify({
-                                name,
-                                email,
-                            }),
+                            body: JSON.stringify({ name, email }),
                         });
-                        if (res.ok) {
-                            return user;
-                        }
+                        if (res.ok) return user;
                     }
-                   
                 } catch (error) {
-                    console.log(error)
+                    console.log("Google SignIn Error:", error);
                 }
             }
             return user;
-        }
-
+        },
+        async jwt({ token, user }) {
+            if (user) {
+                token.id = user.id;
+            }
+            return token;
+        },
+        async session({ session, token }) {
+            session.user.id = token.id;
+            return session;
+        },
     },
+
     session: {
         strategy: "jwt",
     },
     secret: process.env.NEXTAUTH_SECRET,
-
-
 };
+
 const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
