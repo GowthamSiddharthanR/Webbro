@@ -132,7 +132,7 @@ export default function Contact() {
                             <div className="cocardContent">
                                 <p>WEBBRO Softwares</p>
                                 <p>No: 01, Whitefield cross, </p>
-                                <p>Main road, Pondicherry</p>
+                                <p>Main road, Puducherry</p>
                                 <p>605100</p>
                             </div>
                         </a>
